@@ -41,6 +41,10 @@ module Wemo
       state.to_s == "on" ? on! : off!
     end
 
+    def toggle!
+      on? ? off! : on!
+    end
+
     private
 
     def setup
